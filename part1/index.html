@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+        }
+
+        h1 {
+            color: navy;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            alert("Welcome to my website!");
+        });
+        fetch('https://jsonplaceholder.typicode.com/posts/1')
+            .then(response => response.json())
+            .then(data => console.log(data));
+    </script>
+    <h1>Hello World!</h1>
+    <p>This is My WebPage</p>
+
+</body>
+
+</html>
